@@ -1,4 +1,19 @@
-<hello name="{{ name }}"></hello>
+<div *ngFor="let board of board; let i = index">
+    {{board}}
+</div>
+
 <p>
-  Start editing to see some magic happen :)
+  Baris : <input type = "text" [(ngModel)] = "brs"/>
+  <br>
+  <br>
+  Kolom : <input type = "text" [(ngModel)]="kol"/> 
 </p>
+
+<button (click)="changboard()">CLICK</button>
+<div *ngFor="let newboard of newboard; let i = index">
+    {{newboard}}
+</div>
+
+
+
+

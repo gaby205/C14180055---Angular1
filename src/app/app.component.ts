@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  brs:number;
+  kol:number;
+  a=0;
+  b=1;
+  board = [
+    ["*", "*", "*", "*"],
+    ["*", "*", "*", "*"],
+    ["*", "*", "*", "*"],
+    ["*", "*", "*", "*"]
+  ];
+
+  newboard : String[][];
+
+  changboard(){
+    this.newboard = this.board;
+    this.newboard[this.brs][this.kol] = "1";
+  }
+
 }
