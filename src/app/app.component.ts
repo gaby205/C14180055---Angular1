@@ -79,7 +79,7 @@ export class AppComponent  {
          if(this.board[j][i] == "1"){
            this.p1 += 1;
          }
-         else if(this.board[j][i]=="2"){
+         else if(this.board[j][i] == "2"){
            this.p2 += 1;
          }
        }
@@ -101,7 +101,7 @@ export class AppComponent  {
            if(this.board[i][j] == "1"){
            this.p1 += 1;
          }
-         else if(this.board[i][j]=="2"){
+         else if(this.board[i][j] == "2"){
            this.p2 += 1;
          }
         }
