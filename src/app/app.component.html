@@ -1,10 +1,15 @@
-<div *ngFor="let board of board; let i = index">
-    {{board}}
-</div>
-
+<h3>BOARD GAME</h3>
+<h3>{{win}}</h3>
 <p>
-  PEMAIN 1 : 
+  It's Player {{player}} Turn Now!
   <br>
+  <span *ngFor="let baris of board;">
+   <span *ngFor="let kolom of baris">
+     {{kolom}}
+   </span>
+   <br>
+ </span> 
+
   <br>
   Baris : <input type = "text" [(ngModel)] = "brs"/>
   <br>
@@ -12,10 +17,8 @@
   Kolom : <input type = "text" [(ngModel)]="kol"/> 
 </p>
 
-<button (click)="changboard()">CLICK</button>
-<div *ngFor="let newboard of newboard; let i = index">
-    {{newboard}}
-</div>
+<button (click)="checking()">CLICK</button>
+
 
 
 
