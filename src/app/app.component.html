@@ -1,19 +1,13 @@
 <h3>BOARD GAME</h3>
 <h3>{{win}}</h3>
 <p>
-  It's Player {{player}} Turn Now!
-  <br>
+  It's Player {{player}} Turn Now!<br>
   <span *ngFor="let baris of board;">
    <span *ngFor="let kolom of baris">
      {{kolom}}
-   </span>
-   <br>
- </span> 
-
-  <br>
-  Baris : <input type = "text" [(ngModel)] = "brs"/>
-  <br>
-  <br>
+   </span><br>
+ </span><br>
+  Baris : <input type = "text" [(ngModel)] = "brs"/><br><br>
   Kolom : <input type = "text" [(ngModel)]="kol"/> 
 </p>
 
