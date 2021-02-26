@@ -64,9 +64,9 @@ export class AppComponent  {
   winlosestat()
   {
     // CEK Baris
+    this.p1=0;
+    this.p2=0;
     for(var i=1; i<6; i++){
-      this.p1=0;
-      this.p2=0;
        for(var j=1; j<6; j++){
           if(this.board[j][i] == "1"){
            this.p1 += 1;
@@ -86,13 +86,14 @@ export class AppComponent  {
          this.gamestat = true;
          this.player = ""
        }
-
-     }
+       this.p1=0;
+       this.p2=0;
+    }
 
     // CEK KOLOM
+    this.p1=0;
+    this.p2=0;
     for(var i=1; i<6; i++){
-        this.p1=0;
-        this.p2=0;
         for(var j=1; j<6; j++){
           if(this.board[i][j] == "1"){
            this.p1 += 1;
@@ -111,6 +112,8 @@ export class AppComponent  {
          this.gamestat = true;
          this.player = ""
         }
+        this.p1=0;
+        this.p2=0;
     }
   }
 }
