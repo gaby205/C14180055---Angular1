@@ -1,8 +1,10 @@
 <h3>BOARD GAME</h3>
 <h3>{{word}}{{player}}</h3>
 <p>
-  Baris : <input type = "text" [(ngModel)] = "brs"/><br><br>
-  Kolom : <input type = "text" [(ngModel)]="kol"/><br><br>
+  Ingin memilih baris ke berapa dan kolom ke berapa? <br><br>
+  Baris ke -  <input type = "text" [(ngModel)] = "brs"/><br><br>
+  Kolom ke -  <input type = "text" [(ngModel)]= "kol"/><br><br>
+  <button (click)="checking()">CLICK</button><br>
   <span *ngFor="let baris of board;">
    <span *ngFor="let kolom of baris">
      {{kolom}}
@@ -10,7 +12,7 @@
  </span>
 </p>
 
-<button (click)="checking()">CLICK</button>
+
 
 
 
