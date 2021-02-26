@@ -1,14 +1,14 @@
 <h3>BOARD GAME</h3>
-<h3>{{win}}</h3>
+<h3>{{word}}{{player}}</h3>
 <p>
-  It's Player {{player}} Turn Now!<br>
+
+  Baris : <input type = "text" [(ngModel)] = "brs"/><br><br>
+  Kolom : <input type = "text" [(ngModel)]="kol"/><br><br>
   <span *ngFor="let baris of board;">
    <span *ngFor="let kolom of baris">
      {{kolom}}
    </span><br>
- </span><br>
-  Baris : <input type = "text" [(ngModel)] = "brs"/><br><br>
-  Kolom : <input type = "text" [(ngModel)]="kol"/> 
+ </span>
 </p>
 
 <button (click)="checking()">CLICK</button>

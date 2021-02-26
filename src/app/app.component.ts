@@ -14,7 +14,7 @@ export class AppComponent  {
   gamestat : boolean = false;
   p1 : number;
   p2 : number;
-  win : any;
+  word : string = "TURN : Player "
 
   constructor(){
     this.board = []
@@ -77,12 +77,14 @@ export class AppComponent  {
        }
 
        if(this.p1 >= 4){
-         this.win = "CONGRATS! Player 1 WIN (PLEASE CLICK THE BUTTON TO RESTART)";
+         this.word = "CONGRATS! Player 1 WIN (PLEASE CLICK THE BUTTON TO RESTART)";
          this.gamestat = true;
+         this.player = ""
        }
        else if(this.p2 >= 4){
-         this.win= "CONGRATS! Player 2 WIN (PLEASE CLICK THE BUTTON TO RESTART)"
+         this.word= "CONGRATS! Player 2 WIN (PLEASE CLICK THE BUTTON TO RESTART)"
          this.gamestat = true;
+         this.player = ""
        }
 
      }
@@ -100,12 +102,14 @@ export class AppComponent  {
           }
         }
         if(this.p1 >= 4){
-         this.win = "CONGRATS! Player 1 WIN (PLEASE CLICK THE BUTTON TO RESTART)";
+         this.word = "CONGRATS! Player 1 WIN (PLEASE CLICK THE BUTTON TO RESTART)";
          this.gamestat = true;
+         this.player = ""
         }
         else if(this.p2 >= 4){
-         this.win= "CONGRATS! Player 2 WIN (PLEASE CLICK THE BUTTON TO RESTART)";
+         this.word= "CONGRATS! Player 2 WIN (PLEASE CLICK THE BUTTON TO RESTART)";
          this.gamestat = true;
+         this.player = ""
         }
     }
   }
